@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lover See</title>
+  <style>
+    body {
+      background-color: #121212;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background-color: #e0f0ff; /* အပြာနုနု */
+      border-radius: 15px;
+      padding: 30px;
+      width: 320px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+      text-align: center;
+      color: #007BFF;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      color: #333;
+    }
+
+    input[type="email"],
+    input[type="text"],
+    input[type="tel"],
+    input[type="file"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      background-color: #007BFF;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <form class="form-container" action="https://formsubmit.co/jake2102022@gmail.com" method="POST" enctype="multipart/form-data">
+    <h2>Lover See</h2>
+
+    <label for="email">Email *</label>
+    <input type="email" name="email" required>
+
+    <label for="name">Your Full Name *</label>
+    <input type="text" name="name" required>
+
+    <label for="phone">ဖုန်းနံပါတ်</label>
+    <input type="tel" name="phone">
+
+    <label for="image">သင့်ပုံ Upload ပြုလုပ်ပါ</label>
+    <input type="file" name="image" accept="image/*">
+
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+
+    <button type="submit">Next</button>
+  </form>
+
+</body>
+</html>
+<input type="hidden" name="_next" value="thankyou.html">
